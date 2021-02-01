@@ -1,0 +1,15 @@
+<p class="alert-message"> <%=alert%> </p>
+
+<%=form_with url: create_session_path, local: true do |form| %>
+  <div class='form-field'>
+    <%= label_tag :email  %>
+    <%= text_field_tag :email %>
+  </div>
+  <div class='form-field'>
+    <%= label_tag :password  %>
+    <%= password_field_tag :password %>
+  </div>
+  <div>
+    <%= submit_tag "Sign-in"  %>
+  </div>
+<%end%>
